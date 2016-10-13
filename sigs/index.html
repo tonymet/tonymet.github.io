@@ -1,0 +1,222 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+    <title>Company1 email signature generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <style>
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        input {
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            margin-top: 50px;
+        }
+
+        ul,
+        textarea {
+            margin-bottom: 50px;
+        }
+
+        .preview {
+            margin-bottom: 50px;
+            padding: 50px 0;
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1 class="page-header">Company1 email signature generator</h1>
+
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label for="team" class="col-sm-3 control-label">Team</label>
+            <div class="col-sm-9">
+                <select type="text" id="team" class="form-control" placeholder="Team">
+                  <option value="Company1" selected >Company1</option>
+                  <option value="Company2" >Company2</option>
+                  <option value="company3" >Company3</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="name" class="col-sm-3 control-label">Name</label>
+            <div class="col-sm-9">
+                <input type="text" id="name" class="form-control" placeholder="Name">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="name" class="col-sm-3 control-label">Position</label>
+            <div class="col-sm-9">
+                <input type="text" id="position" class="form-control" placeholder="Position">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="name" class="col-sm-3 control-label">Address</label>
+            <div class="col-sm-9">
+                <input type="text" id="address" class="form-control" placeholder="1234 Sepulveda Blvd | Los Angeles, CA 90095">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="name" class="col-sm-3 control-label">Office number</label>
+            <div class="col-sm-9">
+                <input type="text" id="number-office" class="form-control" placeholder="310.123.2334">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="name" class="col-sm-3 control-label">Office extension</label>
+            <div class="col-sm-9">
+                <input type="text" id="number-office-ex" class="form-control">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="name" class="col-sm-3 control-label">Direct number</label>
+            <div class="col-sm-9">
+                <input type="text" id="number-direct" class="form-control">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="name" class="col-sm-3 control-label">Cell number</label>
+            <div class="col-sm-9">
+                <input type="text" id="number-cell" class="form-control">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="name" class="col-sm-3 control-label">Fax number</label>
+            <div class="col-sm-9">
+                <input type="text" id="number-fax" class="form-control">
+            </div>
+        </div>
+    </form>
+
+    <h3>Preview</h3>
+    <h5>Select and copy whole preview as you'd copy regular text to use it as an email signature</h5>
+    <div class="preview">
+        <table id="Company1-sig">
+            <tr>
+                <td valign="top"><img id="Company1-sig-team" src="https://lh4.googleusercontent.com/-ak28-E7WE_w/TX9JIJy4lBI/AAAAAAAALcY/4hPNBtNZk8U/s1600/sony_logo20.png" width="36" height="70" alt="Company1" style="margin-right: 15px;"></td>
+                <td valign="top">
+                    <table>
+                        <tr>
+                            <td id="Company1-sig-name" style="font-size: 12px; font-weight: bold; color: #222; font-family: helvetica,arial,sans-serif; line-height: 1.5">Name</td>
+                        </tr>
+                        <tr>
+                            <td id="Company1-sig-position" style="font-size: 12px; color: #777; font-family: helvetica,arial,sans-serif; line-height: 1.5">Position | Company1</td>
+                        </tr>
+                        <tr>
+                            <td id="Company1-sig-address" style="font-size: 12px; color: #777; font-family: helvetica,arial,sans-serif; line-height: 1.5">1234 Sepulveda Blvd | Los Angeles, CA 90095</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span id="Company1-sig-number-office" style="font-size: 12px; color: #777; font-family: helvetica,arial,sans-serif; line-height: 1.5; float: left; white-space: pre-wrap;">o: 310.123.2334</span>
+                                <span id="Company1-sig-number-office-ex" style="font-size: 12px; color: #777; font-family: helvetica,arial,sans-serif; line-height: 1.5; float: left; white-space: pre-wrap;"></span>
+                                <span id="Company1-sig-number-direct" style="font-size: 12px; color: #777; font-family: helvetica,arial,sans-serif; line-height: 1.5; float: left; white-space: pre-wrap;"></span>
+                                <span id="Company1-sig-number-cell" style="font-size: 12px; color: #777; font-family: helvetica,arial,sans-serif; line-height: 1.5; float: left; white-space: pre-wrap;"></span>
+                                <span id="Company1-sig-number-fax" style="font-size: 12px; color: #777; font-family: helvetica,arial,sans-serif; line-height: 1.5; float: left; white-space: pre-wrap;"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="Company1-sig-link">
+                                <a href="http://Company1.com" target="_blank" style="font-size: 12px; color: #427ab9; font-family: helvetica,arial,sans-serif; line-height: 1.5">www.Company1.com</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <h4>How to use signatures:</h4>
+    <ul>
+        <li><a href="http://screencast.com/t/Hi9sRqM6zY3C">Step-by-step Gmail signature screencast</li>
+        <li><a href="https://support.google.com/mail/answer/8395?hl=en">Gmail manual</a></li>
+        <li><a href="http://support.microsoft.com/kb/2455171">How to create signature in Outlook for Mac 2011</a></li>
+        <li><a href="http://www.howtogeek.com/173548/how-to-create-a-new-signature-in-outlook-2013/">How to Create a New Signature in Outlook 2013</a></li>
+        <li><a href="http://www.howtogeek.com/173611/how-to-assign-a-default-signature-in-outlook-2013/">How to Assign a Default Signature in Outlook 2013</a></li>
+    </ul>
+
+    <h5>or copy this code if you need HTML representation</h5>
+    <textarea id="Company1-code" class="form-control" rows="9" readonly></textarea>
+</div>
+
+<script>
+    (function () {
+        var imgs = {
+          'Company1': ['https://lh4.googleusercontent.com/-ak28-E7WE_w/TX9JIJy4lBI/AAAAAAAALcY/4hPNBtNZk8U/s1600/sony_logo20.png',36,70],
+          'Company2': ['https://cdn.colorlib.com/wp/wp-content/uploads/sites/2/2014/02/Olympic-logo.png', 78,68],
+          'company3': ['http://d.fastcompany.net/multisite_files/fastcompany/imagecache/inline-large/inline/2014/08/3034007-inline-i-applelogo.jpg', 78,78]
+        };
+        var links = {
+          'Company1' : ['https://www.Company1.com/', 'www.Company1.com'],
+          'Company2' : ['http://www.Company2.com/', 'www.Company2.com'],
+          'company3' : ['http://www.Company3.com/', 'www.Company3.com']
+        };
+
+        function bindChange (src, dest, template, clear) {
+            document.querySelector(src).addEventListener('keyup', function (event) {
+                var newValue = event.target.value || event.target.placeholder;
+
+                if (clear && !event.target.value) {
+                    newValue = '';
+                } else {
+                    if (template) newValue = template.replace(/{{value}}/g, newValue);
+                }
+
+                document.querySelector(dest).innerText = newValue;
+                updateCode();
+            });
+        }
+
+        function bindChangeImage(src, dest,clear){
+          document.querySelector(src).addEventListener('change', function (event) {
+              var newValue = event.target.value || event.target.placeholder;
+              e = document.querySelector(dest);
+              e.setAttribute('src', imgs[newValue][0]);
+              e.setAttribute('width', imgs[newValue][1]);
+              e.setAttribute('height',imgs[newValue][2]);
+              updateCode();
+          });
+        }
+        function bindChangeLink(src, dest,clear){
+          document.querySelector(src).addEventListener('change', function (event) {
+              var newValue = event.target.value || event.target.placeholder;
+              e = document.querySelector(dest);
+              e.innerText = links[newValue][1];
+              e.setAttribute('href',links[newValue][0]);
+              updateCode();
+          });
+        }
+
+        function updateCode () {
+            document.querySelector('#Company1-code').value = document.querySelector('#Company1-sig').outerHTML.replace(/>\s*</g, '><');
+        }
+
+        bindChange('#name', '#Company1-sig-name');
+        bindChangeImage('#team', '#Company1-sig-team', true);
+        bindChangeLink('#team', '#Company1-sig-link a', true);
+        bindChange('#position', '#Company1-sig-position', '{{value}} | Company1');
+        bindChange('#address', '#Company1-sig-address');
+
+        bindChange('#number-office', '#Company1-sig-number-office', 'o: {{value}}');
+        bindChange('#number-office-ex', '#Company1-sig-number-office-ex', ' x{{value}}', true);
+        bindChange('#number-direct', '#Company1-sig-number-direct', ' | d: {{value}}', true);
+        bindChange('#number-cell', '#Company1-sig-number-cell', ' | c: {{value}}', true);
+        bindChange('#number-fax', '#Company1-sig-number-fax', ' | f: {{value}}', true);
+    })();
+</script>
+</body>
+</html>
